@@ -4,28 +4,7 @@ from time import sleep
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-PINS = [
-
-     2,
-     3,
-     4, 14,
-        15,
-    17, 18,
-    27,
-    22, 23,
-        24,
-    10,
-     9, 25,
-    11,  8,
-         7,
-
-     5,
-     6, 12,
-    13,
-    19, 16,
-    26, 20,
-        21
-]
+PINS = [2, 3, 4, 14, 15, 17, 18, 27, 22, 23, 24, 10, 9, 25, 11, 8, 7, 5, 6, 12, 13, 19, 16, 26, 20, 21]
 
 
 def gpio_setup():
@@ -67,6 +46,8 @@ def all_off(step=0, reverse=False):
 
 def main():
     gpio_setup()
+
+    print('')
 
     while True:
         all_on(step=0.1)
