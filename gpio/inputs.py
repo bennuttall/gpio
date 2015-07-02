@@ -53,7 +53,7 @@ def callback(pin):
     Callback function to print which GPIO pin was pressed.
     """
 
-    print("pin %2.0f was pressed")
+    print("pin %2.0f was pressed" % pin)
 
 
 def main():
